@@ -1,50 +1,207 @@
-# Welcome to your Expo app 👋
+# 🍔 Food Ordering Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A **production-style cross-platform food ordering mobile application** built using **Expo + React Native**.  
+The app demonstrates real-world UI/UX patterns, scalable architecture, and clean code practices used in modern mobile development.
 
-## Get started
+> Built to showcase practical React Native skills, Expo ecosystem knowledge, and end-to-end feature implementation.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🚀 Project Highlights
 
-2. Start the app
+- 📱 Cross-platform app (Android & iOS)
+- 🧭 File-based routing with **Expo Router**
+- 🔐 Authentication flows (Sign Up / Sign In)
+- 🏠 Home with promotions & categories
+- 🔍 Food search & filtering
+- 🛒 Cart & checkout with dynamic pricing
+- 👤 User profile & account actions
+- 🧱 Clean, scalable project architecture
+- ⚡ Performance-optimized UI components
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 📸 App Screenshots
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 🔐 Authentication
+| Sign Up | Sign In |
+|-------|--------|
+| ![](./assets/screenshots/signup.jpeg) | ![](./assets/screenshots/signin.jpeg) |
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+### 🏠 Home & Offers
+| Home | Promotions |
+|-----|-----------|
+| ![](./assets/screenshots/home.jpeg) | ![](./assets/screenshots/promotions.jpeg) |
 
-When you're ready, run:
+---
+
+### 🔍 Search & Browse
+| Search | Categories |
+|-------|------------|
+| ![](./assets/screenshots/search.jpeg) | ![](./assets/screenshots/categories.jpeg) |
+
+---
+
+### 🛒 Cart & Checkout
+| Cart | Payment Summary |
+|------|----------------|
+| ![](./assets/screenshots/cart.jpeg) | ![](./assets/screenshots/payment.jpeg) |
+
+---
+
+### 👤 Profile
+| Profile |
+|--------|
+| ![](./assets/screenshots/profile.jpeg) |
+
+---
+
+## 🧩 Features Breakdown
+
+### 🔐 Authentication
+- Sign Up & Sign In screens
+- Input validation-ready architecture
+- Easily extendable for OAuth / OTP login
+
+### 🏠 Home
+- Delivery location selector
+- Promotional banners
+- Category-based browsing
+
+### 🔍 Search
+- Search food items by name
+- Filter by food category
+- Clean card-based UI layout
+
+### 🛒 Cart & Checkout
+- Add/remove items
+- Quantity controls
+- Dynamic price calculation
+- Delivery fee & discount logic
+
+### 👤 Profile
+- User overview
+- Orders, address & payments placeholders
+- Logout functionality
+
+---
+
+## 🧱 Project Architecture
+
+```text
+app/
+├── (auth)/
+│   ├── sign-in.tsx
+│   └── sign-up.tsx
+├── (tabs)/
+│   ├── home.tsx
+│   ├── search.tsx
+│   ├── cart.tsx
+│   └── profile.tsx
+├── components/
+│   ├── FoodCard.tsx
+│   ├── CategoryChip.tsx
+│   └── CartItem.tsx
+├── constants/
+├── hooks/
+├── utils/
+├── assets/
+│   └── screenshots/
+└── app.config.ts
+````
+
+✔ Modular & scalable
+✔ Clear separation of concerns
+✔ Easy backend integration
+
+---
+
+## 🛠 Tech Stack
+
+| Category  | Technology                                |
+| --------- | ----------------------------------------- |
+| Framework | Expo (React Native)                       |
+| Routing   | Expo Router                               |
+| Language  | TypeScript                                |
+| Styling   | React Native StyleSheet                   |
+| State     | Local State (extendable to Redux/Zustand) |
+| Platform  | Android & iOS                             |
+
+---
+
+## 🧪 Getting Started
+
+### 1️⃣ Install Dependencies
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2️⃣ Start the App
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Run on:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+* Android Emulator
+* iOS Simulator
+* Physical device via **Expo Go**
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 📈 What This Project Demonstrates
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+* Real-world mobile app development workflow
+* Strong understanding of **React Native fundamentals**
+* Expo ecosystem proficiency
+* UI/UX driven component design
+* Clean, readable, and maintainable code
+* Scalable architecture suitable for production apps
+
+---
+
+## 🔮 Future Enhancements
+
+* Backend integration (Node.js / Appwrite / Firebase)
+* JWT / OAuth authentication
+* Online payments (Stripe / Razorpay)
+* Order history & live tracking
+* Push notifications
+
+---
+
+## 👩‍💻 Developer
+
+**Esha**
+Software Developer | Full Stack & Mobile Applications
+
+* React & React Native
+* TypeScript & JavaScript
+* Node.js & API integration
+* Clean architecture & scalable systems
+
+---
+
+## 📚 References
+
+* Expo Documentation
+  [https://docs.expo.dev/](https://docs.expo.dev/)
+
+* Expo Router
+  [https://docs.expo.dev/router/introduction/](https://docs.expo.dev/router/introduction/)
+
+* React Native Docs
+  [https://reactnative.dev/docs/getting-started](https://reactnative.dev/docs/getting-started)
+
+* Mobile UX Guidelines
+  [https://material.io/design](https://material.io/design)
+
+---
+
+### 📌 If you like this project, feel free to ⭐ the repository!
+
+```
